@@ -26,7 +26,7 @@
         <p class="sub-text">Click here</p>
     </div>
     <div class="greeting">
-        <p class="greeting-message">Chúc bạn một Giáng sinh an lành và hạnh phúc nhaaa!</p>
+        <p class="greeting-message">Chúc Như một Giáng sinh an lành và hạnh phúc nhaaa!</p>
     </div>
     
     <script>
@@ -42,6 +42,26 @@
             body.style.backgroundColor = colors[colorIndex];
             // Chuyển sang màu tiếp theo
             colorIndex = (colorIndex + 1) % colors.length;
+        });
+
+        const audio = new Audio('nhac.mp3'); 
+        audio.loop = true; // Lặp lại nhạc
+
+        // Biến cờ để kiểm tra nhạc đã phát hay chưa
+        let isAudioStarted = false;
+
+        banner.addEventListener('click', () => {
+            // Đổi màu nền
+            body.style.backgroundColor = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+
+            // Chỉ phát nhạc lần đầu
+            if (!isAudioStarted) {
+                audio.play().catch(error => {
+                    console.log('Autoplay bị chặn: ', error);
+                });
+                isAudioStarted = true; // Đánh dấu nhạc đã phát
+            }
         });
     </script>
     
