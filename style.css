@@ -276,4 +276,9 @@ body {
     .greeting{
         margin-top: -160px;
     }
+
+    .sub-text{
+        font-size: 0.7rem
+
+    }
 }
