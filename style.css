@@ -222,3 +222,79 @@ body {
 }
 
 
+/* Responsive cho màn hình Tablet */
+@media (max-width: 768px) {
+    .xmas-tree {
+        width: 300px; /* Giảm kích thước cây */
+        height: 400px;
+    }
+
+    .star {
+        font-size: 30px; /* Giảm kích thước ngôi sao */
+        top: 10%;
+    }
+
+    .t1 {
+        border-bottom-width: 80px; /* Giảm kích thước tầng 1 */
+    }
+
+    .t2 {
+        border-bottom-width: 100px; /* Giảm kích thước tầng 2 */
+    }
+
+    .t3 {
+        border-bottom-width: 120px; /* Giảm kích thước tầng 3 */
+    }
+
+    .stem {
+        width: 30px; /* Giảm kích thước thân cây */
+        height: 80px;
+    }
+
+    .banner {
+        font-size: 1.5rem; /* Giảm kích thước chữ banner */
+        padding: 8px 16px;
+    }
+
+    .greeting-message {
+        font-size: 20px; /* Giảm kích thước lời chúc */
+    }
+}
+
+/* Responsive cho màn hình Mobile */
+@media (max-width: 480px) {
+    .xmas-tree {
+        width: 200px; /* Giảm thêm kích thước cây */
+        height: 300px;
+    }
+
+    .star {
+        font-size: 20px; /* Giảm thêm kích thước ngôi sao */
+    }
+
+    .t1 {
+        border-bottom-width: 60px; /* Giảm thêm kích thước tầng 1 */
+    }
+
+    .t2 {
+        border-bottom-width: 75px; /* Giảm thêm kích thước tầng 2 */
+    }
+
+    .t3 {
+        border-bottom-width: 90px; /* Giảm thêm kích thước tầng 3 */
+    }
+
+    .stem {
+        width: 20px; /* Giảm thêm kích thước thân cây */
+        height: 60px;
+    }
+
+    .banner {
+        font-size: 1rem; /* Giảm thêm kích thước chữ banner */
+        padding: 6px 12px;
+    }
+
+    .greeting-message {
+        font-size: 16px; /* Giảm thêm kích thước lời chúc */
+    }
+}
