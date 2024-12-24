@@ -203,11 +203,11 @@ body {
 
 .banner:hover {
     background-color: #cab8b1;
-    transform: translate(-50%, 0) scale(1.1); /* Phóng to nhưng không dịch chuyển */
+    transform: translate(-50%, 0) scale(1.1); 
 }
 
 .banner:active {
-    transform: translate(-50%, 0) scale(1); /* Không thay đổi kích thước khi nhấn */
+    transform: translate(-50%, 0) scale(1); 
     box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -220,6 +220,16 @@ body {
     font-size: 30px;
     color: #ffffff;
 }
+
+.sub-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1rem;
+    color: white;
+    margin-top: 2px; /* Khoảng cách với dòng trên */
+    text-align: bottom;
+    opacity: 0.8; /* Làm mờ nhẹ để khác biệt */
+}
+
 
 
 /* Responsive cho màn hình Mobile */
@@ -255,8 +265,8 @@ body {
 
     .banner {
         font-size: 1rem; /* Giảm thêm kích thước chữ banner */
-        padding: 6px 12px;
-        top: 574px;
+        padding: 6px 24px;
+        top: 700px;
     }
 
     .greeting-message {
@@ -264,6 +274,6 @@ body {
     }
 
     .greeting{
-        margin-top: -234px;
+        margin-top: -160px;
     }
 }
