@@ -225,8 +225,8 @@ body {
 /* Responsive cho màn hình Tablet */
 @media (max-width: 768px) {
     .xmas-tree {
-        width: 300px; /* Giảm kích thước cây */
-        height: 400px;
+        width: 100%; /* Giảm kích thước cây */
+        height: auto;
     }
 
     .star {
